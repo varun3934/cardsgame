@@ -1,0 +1,74 @@
+*J{
+    margin:0%;
+    padding:0%;
+}
+html,body{
+    height: 100%;
+    width:100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+.card{
+    position:absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); this is very important  */
+    
+    height: 250px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    /* overflow hidden is used to fit img as the shape we made */
+}
+
+#c1{
+    z-index: 4;
+    background-color: yellow;
+    
+}
+
+#c2{
+    rotate: -7deg;
+    z-index: 3;
+}
+#c3{
+    z-index: 2;
+    rotate:-14deg;
+   
+}
+#c4{
+    z-index: 1;
+    rotate:-21deg;
+    
+}
+#c2:hover{
+    z-index: 6;
+}
+#c3:hover{
+    z-index: 6;
+}
+#c4:hover{
+    z-index: 6;
+}
+
+
+
+/*postion absolute 
+z index 
+border
+overflow
+object fit*/
+img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    
+}
